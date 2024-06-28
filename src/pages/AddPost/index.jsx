@@ -121,8 +121,8 @@ try {
         </Button>
         <div className={styles.imageContainer}>
         <br></br>
-        <div className={styles.divimage} style={{backgroundImage: `url(${`http://localhost:4444${imageUrl}`})`}} alt="Uploaded"></div>
-        {/* <img className={styles.image}  src={`http://localhost:4444${imageUrl}`} alt="Uploaded" /> */}
+        <div className={styles.divimage} style={{backgroundImage: `url(${`${process.env.REACT_APP_API_URL}${imageUrl}`})`}} alt="Uploaded"></div>
+        {/* <img className={styles.image}  src={`${process.env.REACT_APP_API_URL}${imageUrl}`} alt="Uploaded" /> */}
         </div>
         </>
       )}
